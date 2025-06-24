@@ -6,8 +6,13 @@
         }
         html{
           scroll-behavior: smooth;
-        }
+        }@font-face {
+    font-family: myfont;
+    src:url(Marcellus,Quicksand/Marcellus/Marcellus-Regular.ttf);
+
+}
         body{
+        font-family: myfont;
           overflow-x: hidden;
             line-height: 1.5;
             font-size: 20px;

@@ -20,6 +20,14 @@
 });
 
 
+const menuIcon = document.querySelector(".menu-icon");
+const navLinks = document.querySelector(".nav-links");
+
+menuIcon.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const reveals = document.querySelectorAll('.reveal');
 
@@ -47,5 +55,17 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();                // run once on load
+  }
+});
+
+// For second header
+document.addEventListener('DOMContentLoaded', () => {
+  const menuIcon2 = document.querySelector(".menu-icon2");
+  const navLinks2 = document.querySelector(".nav-links2");
+
+  if (menuIcon2 && navLinks2) {
+    menuIcon2.addEventListener("click", () => {
+      navLinks2.classList.toggle("show");
+    });
   }
 });

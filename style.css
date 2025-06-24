@@ -21,12 +21,20 @@
           width: 80px;
         }
         header {
-            display: flex;
+            /* display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
             position: relative;
-            z-index: 10;
+            z-index: 10; */
+            display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+    /* background-color: white; */
         }
         header p{
             font-size: 28px;
@@ -45,11 +53,19 @@
             color: grey;
             font-weight: 500;
         }
+        .menu-icon {
+          display: none;
+          width: 30px;
+          cursor: pointer;
+        }
+        .micon{
+          margin-left: 10px;
+        }
         .button{
             padding: 12px 20px;
             border: 2px olive solid;
             cursor: pointer;
-            align-self: flex-end;
+            /* align-self: flex-end; */
             text-decoration: none;
             color: grey;
         }
@@ -472,9 +488,16 @@ margin-bottom: 20px;
         flex-direction: column;
         text-align: center;
     }
-   nav{
+   .menu-icon {
+    display: block;
+  }
+  nav{
+    display: none;
     flex-direction: column;
-   }
+  }
+  nav.show {
+    display: flex;
+  }
     .bg{
       background-color:#e8e7ec ;
     }
@@ -503,4 +526,15 @@ margin-bottom: 20px;
     .connect p{
       margin-bottom: 15px;
     }
+}
+
+/* ===== Second Header Styling ===== */
+
+
+.header-left2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
